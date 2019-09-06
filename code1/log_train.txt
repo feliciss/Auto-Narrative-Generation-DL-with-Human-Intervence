@@ -1,0 +1,916 @@
+INFO:tensorflow:Starting running in train mode...
+INFO:tensorflow:Building generator graph...
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/waterfriend/code/sc_model.py:113: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow/contrib/rnn/python/ops/rnn.py:233: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+INFO:tensorflow:Time to build graph: 1 seconds
+2019-08-13 16:48:59.075519: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-08-13 16:48:59.106393: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 1992000000 Hz
+2019-08-13 16:48:59.107351: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x1e99b500 executing computations on platform Host. Devices:
+2019-08-13 16:48:59.107374: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+INFO:tensorflow:starting run_pre_train_generator
+INFO:tensorflow:seconds for 100 training generator step: 0.079 
+INFO:tensorflow:loss: 0.838244
+INFO:tensorflow:seconds for 200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.713159
+INFO:tensorflow:seconds for 300 training generator step: 0.075 
+INFO:tensorflow:loss: 0.656587
+INFO:tensorflow:seconds for 400 training generator step: 0.075 
+INFO:tensorflow:loss: 0.643754
+INFO:tensorflow:seconds for 500 training generator step: 0.078 
+INFO:tensorflow:loss: 0.619388
+INFO:tensorflow:seconds for 600 training generator step: 0.077 
+INFO:tensorflow:loss: 0.614354
+INFO:tensorflow:seconds for 700 training generator step: 0.077 
+INFO:tensorflow:loss: 0.611373
+INFO:tensorflow:seconds for 800 training generator step: 0.078 
+INFO:tensorflow:loss: 0.608505
+INFO:tensorflow:seconds for 900 training generator step: 0.075 
+INFO:tensorflow:loss: 0.607727
+INFO:tensorflow:seconds for 1000 training generator step: 0.075 
+INFO:tensorflow:loss: 0.576925
+INFO:tensorflow:BLEU: 0.4066018844962647
+INFO:tensorflow:BLEU: 0.41848415887155366
+INFO:tensorflow:seconds for 1100 training generator step: 0.156 
+INFO:tensorflow:loss: 0.598351
+INFO:tensorflow:seconds for 1200 training generator step: 0.075 
+INFO:tensorflow:loss: 0.571415
+INFO:tensorflow:seconds for 1300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.531630
+INFO:tensorflow:seconds for 1400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.506365
+INFO:tensorflow:seconds for 1500 training generator step: 0.075 
+INFO:tensorflow:loss: 0.504567
+INFO:tensorflow:seconds for 1600 training generator step: 0.074 
+INFO:tensorflow:loss: 0.496370
+INFO:tensorflow:finished 1 epoches
+INFO:tensorflow:seconds for 1700 training generator step: 0.001 
+INFO:tensorflow:loss: 0.003784
+INFO:tensorflow:seconds for 1800 training generator step: 0.075 
+INFO:tensorflow:loss: 0.483996
+INFO:tensorflow:seconds for 1900 training generator step: 0.075 
+INFO:tensorflow:loss: 0.476810
+INFO:tensorflow:seconds for 2000 training generator step: 0.075 
+INFO:tensorflow:loss: 0.472005
+INFO:tensorflow:BLEU: 0.5001767174006857
+INFO:tensorflow:BLEU: 0.5003817795971892
+INFO:tensorflow:seconds for 2100 training generator step: 0.154 
+INFO:tensorflow:loss: 0.455160
+INFO:tensorflow:seconds for 2200 training generator step: 0.075 
+INFO:tensorflow:loss: 0.458111
+INFO:tensorflow:seconds for 2300 training generator step: 0.075 
+INFO:tensorflow:loss: 0.453234
+INFO:tensorflow:seconds for 2400 training generator step: 0.075 
+INFO:tensorflow:loss: 0.450430
+INFO:tensorflow:seconds for 2500 training generator step: 0.075 
+INFO:tensorflow:loss: 0.444905
+INFO:tensorflow:seconds for 2600 training generator step: 0.074 
+INFO:tensorflow:loss: 0.440559
+INFO:tensorflow:seconds for 2700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.441392
+INFO:tensorflow:seconds for 2800 training generator step: 0.080 
+INFO:tensorflow:loss: 0.431655
+INFO:tensorflow:seconds for 2900 training generator step: 0.077 
+INFO:tensorflow:loss: 0.433534
+INFO:tensorflow:seconds for 3000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.421176
+INFO:tensorflow:BLEU: 0.46133957215216065
+INFO:tensorflow:BLEU: 0.4460102800745318
+INFO:tensorflow:seconds for 3100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.413702
+INFO:tensorflow:seconds for 3200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.423590
+INFO:tensorflow:seconds for 3300 training generator step: 0.075 
+INFO:tensorflow:loss: 0.426282
+INFO:tensorflow:finished 2 epoches
+INFO:tensorflow:seconds for 3400 training generator step: 0.001 
+INFO:tensorflow:loss: 0.009454
+INFO:tensorflow:seconds for 3500 training generator step: 0.075 
+INFO:tensorflow:loss: 0.411854
+INFO:tensorflow:seconds for 3600 training generator step: 0.075 
+INFO:tensorflow:loss: 0.394327
+INFO:tensorflow:seconds for 3700 training generator step: 0.075 
+INFO:tensorflow:loss: 0.404917
+INFO:tensorflow:seconds for 3800 training generator step: 0.075 
+INFO:tensorflow:loss: 0.417468
+INFO:tensorflow:seconds for 3900 training generator step: 0.075 
+INFO:tensorflow:loss: 0.417182
+INFO:tensorflow:seconds for 4000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.403896
+INFO:tensorflow:BLEU: 0.5344430329224411
+INFO:tensorflow:BLEU: 0.5266709138541212
+INFO:tensorflow:seconds for 4100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.407868
+INFO:tensorflow:seconds for 4200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.403719
+INFO:tensorflow:seconds for 4300 training generator step: 0.075 
+INFO:tensorflow:loss: 0.397819
+INFO:tensorflow:seconds for 4400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.408263
+INFO:tensorflow:seconds for 4500 training generator step: 0.074 
+INFO:tensorflow:loss: 0.391486
+INFO:tensorflow:seconds for 4600 training generator step: 0.074 
+INFO:tensorflow:loss: 0.399653
+INFO:tensorflow:seconds for 4700 training generator step: 0.075 
+INFO:tensorflow:loss: 0.380133
+INFO:tensorflow:seconds for 4800 training generator step: 0.074 
+INFO:tensorflow:loss: 0.378046
+INFO:tensorflow:seconds for 4900 training generator step: 0.075 
+INFO:tensorflow:loss: 0.383661
+INFO:tensorflow:seconds for 5000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.394315
+INFO:tensorflow:BLEU: 0.5081731428329332
+INFO:tensorflow:BLEU: 0.4915517750922693
+INFO:tensorflow:finished 3 epoches
+INFO:tensorflow:seconds for 5100 training generator step: 0.002 
+INFO:tensorflow:loss: 0.012499
+INFO:tensorflow:seconds for 5200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.372388
+INFO:tensorflow:seconds for 5300 training generator step: 0.075 
+INFO:tensorflow:loss: 0.374739
+INFO:tensorflow:seconds for 5400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.373295
+INFO:tensorflow:seconds for 5500 training generator step: 0.075 
+INFO:tensorflow:loss: 0.367222
+INFO:tensorflow:seconds for 5600 training generator step: 0.075 
+INFO:tensorflow:loss: 0.380921
+INFO:tensorflow:seconds for 5700 training generator step: 0.075 
+INFO:tensorflow:loss: 0.374574
+INFO:tensorflow:seconds for 5800 training generator step: 0.075 
+INFO:tensorflow:loss: 0.374400
+INFO:tensorflow:seconds for 5900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.357268
+INFO:tensorflow:seconds for 6000 training generator step: 0.073 
+INFO:tensorflow:loss: 0.370383
+INFO:tensorflow:BLEU: 0.5069609060103151
+INFO:tensorflow:BLEU: 0.4972286373091469
+INFO:tensorflow:seconds for 6100 training generator step: 0.152 
+INFO:tensorflow:loss: 0.370198
+INFO:tensorflow:seconds for 6200 training generator step: 0.075 
+INFO:tensorflow:loss: 0.372465
+INFO:tensorflow:seconds for 6300 training generator step: 0.075 
+INFO:tensorflow:loss: 0.372221
+INFO:tensorflow:seconds for 6400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.372661
+INFO:tensorflow:seconds for 6500 training generator step: 0.082 
+INFO:tensorflow:loss: 0.370366
+INFO:tensorflow:seconds for 6600 training generator step: 0.080 
+INFO:tensorflow:loss: 0.379214
+INFO:tensorflow:seconds for 6700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.372192
+INFO:tensorflow:finished 4 epoches
+INFO:tensorflow:seconds for 6800 training generator step: 0.003 
+INFO:tensorflow:loss: 0.013287
+INFO:tensorflow:seconds for 6900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.355494
+INFO:tensorflow:seconds for 7000 training generator step: 0.073 
+INFO:tensorflow:loss: 0.375843
+INFO:tensorflow:BLEU: 0.5537312854311002
+INFO:tensorflow:BLEU: 0.5425734991370381
+INFO:tensorflow:seconds for 7100 training generator step: 0.152 
+INFO:tensorflow:loss: 0.358092
+INFO:tensorflow:seconds for 7200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.352558
+INFO:tensorflow:seconds for 7300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.363211
+INFO:tensorflow:seconds for 7400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.346524
+INFO:tensorflow:seconds for 7500 training generator step: 0.074 
+INFO:tensorflow:loss: 0.359042
+INFO:tensorflow:seconds for 7600 training generator step: 0.074 
+INFO:tensorflow:loss: 0.347076
+INFO:tensorflow:seconds for 7700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.341513
+INFO:tensorflow:seconds for 7800 training generator step: 0.074 
+INFO:tensorflow:loss: 0.339397
+INFO:tensorflow:seconds for 7900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.342788
+INFO:tensorflow:seconds for 8000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.355490
+INFO:tensorflow:BLEU: 0.5654625397658353
+INFO:tensorflow:BLEU: 0.5579691035101679
+INFO:tensorflow:seconds for 8100 training generator step: 0.152 
+INFO:tensorflow:loss: 0.347066
+INFO:tensorflow:seconds for 8200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.356456
+INFO:tensorflow:seconds for 8300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.353179
+INFO:tensorflow:seconds for 8400 training generator step: 0.075 
+INFO:tensorflow:loss: 0.341124
+INFO:tensorflow:finished 5 epoches
+INFO:tensorflow:seconds for 8500 training generator step: 0.004 
+INFO:tensorflow:loss: 0.016322
+INFO:tensorflow:seconds for 8600 training generator step: 0.074 
+INFO:tensorflow:loss: 0.335707
+INFO:tensorflow:seconds for 8700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.332593
+INFO:tensorflow:seconds for 8800 training generator step: 0.074 
+INFO:tensorflow:loss: 0.352139
+INFO:tensorflow:seconds for 8900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.328101
+INFO:tensorflow:seconds for 9000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.339370
+INFO:tensorflow:BLEU: 0.47014866801118294
+INFO:tensorflow:BLEU: 0.4651608465981565
+INFO:tensorflow:seconds for 9100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.336035
+INFO:tensorflow:seconds for 9200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.328686
+INFO:tensorflow:seconds for 9300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.328686
+INFO:tensorflow:seconds for 9400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.332261
+INFO:tensorflow:seconds for 9500 training generator step: 0.074 
+INFO:tensorflow:loss: 0.349764
+INFO:tensorflow:seconds for 9600 training generator step: 0.074 
+INFO:tensorflow:loss: 0.343223
+INFO:tensorflow:seconds for 9700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.337947
+INFO:tensorflow:seconds for 9800 training generator step: 0.075 
+INFO:tensorflow:loss: 0.333494
+INFO:tensorflow:seconds for 9900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.334672
+INFO:tensorflow:seconds for 10000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.315194
+INFO:tensorflow:BLEU: 0.5990807793835898
+INFO:tensorflow:BLEU: 0.5874668789746122
+INFO:tensorflow:seconds for 10100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.334849
+INFO:tensorflow:finished 6 epoches
+INFO:tensorflow:seconds for 10200 training generator step: 0.004 
+INFO:tensorflow:loss: 0.016984
+INFO:tensorflow:seconds for 10300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.323322
+INFO:tensorflow:seconds for 10400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.313159
+INFO:tensorflow:seconds for 10500 training generator step: 0.074 
+INFO:tensorflow:loss: 0.316526
+INFO:tensorflow:seconds for 10600 training generator step: 0.075 
+INFO:tensorflow:loss: 0.316374
+INFO:tensorflow:seconds for 10700 training generator step: 0.075 
+INFO:tensorflow:loss: 0.325877
+INFO:tensorflow:seconds for 10800 training generator step: 0.074 
+INFO:tensorflow:loss: 0.309324
+INFO:tensorflow:seconds for 10900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.321698
+INFO:tensorflow:seconds for 11000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.322869
+INFO:tensorflow:BLEU: 0.5874279186981594
+INFO:tensorflow:BLEU: 0.5781679537629865
+INFO:tensorflow:seconds for 11100 training generator step: 0.152 
+INFO:tensorflow:loss: 0.319506
+INFO:tensorflow:seconds for 11200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.336871
+INFO:tensorflow:seconds for 11300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.322849
+INFO:tensorflow:seconds for 11400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.328673
+INFO:tensorflow:seconds for 11500 training generator step: 0.074 
+INFO:tensorflow:loss: 0.314015
+INFO:tensorflow:seconds for 11600 training generator step: 0.074 
+INFO:tensorflow:loss: 0.324938
+INFO:tensorflow:seconds for 11700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.326018
+INFO:tensorflow:seconds for 11800 training generator step: 0.074 
+INFO:tensorflow:loss: 0.323299
+INFO:tensorflow:finished 7 epoches
+INFO:tensorflow:seconds for 11900 training generator step: 0.005 
+INFO:tensorflow:loss: 0.021699
+INFO:tensorflow:seconds for 12000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.293875
+INFO:tensorflow:BLEU: 0.558306494876954
+INFO:tensorflow:BLEU: 0.5558543953756437
+INFO:tensorflow:seconds for 12100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.297430
+INFO:tensorflow:seconds for 12200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.300795
+INFO:tensorflow:seconds for 12300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.310911
+INFO:tensorflow:seconds for 12400 training generator step: 0.075 
+INFO:tensorflow:loss: 0.296154
+INFO:tensorflow:seconds for 12500 training generator step: 0.074 
+INFO:tensorflow:loss: 0.305567
+INFO:tensorflow:seconds for 12600 training generator step: 0.073 
+INFO:tensorflow:loss: 0.303720
+INFO:tensorflow:seconds for 12700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.318971
+INFO:tensorflow:seconds for 12800 training generator step: 0.074 
+INFO:tensorflow:loss: 0.308369
+INFO:tensorflow:seconds for 12900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.309416
+INFO:tensorflow:seconds for 13000 training generator step: 0.075 
+INFO:tensorflow:loss: 0.303024
+INFO:tensorflow:BLEU: 0.5385641143484751
+INFO:tensorflow:BLEU: 0.5341087604511504
+INFO:tensorflow:seconds for 13100 training generator step: 0.152 
+INFO:tensorflow:loss: 0.312317
+INFO:tensorflow:seconds for 13200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.314593
+INFO:tensorflow:seconds for 13300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.329477
+INFO:tensorflow:seconds for 13400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.316438
+INFO:tensorflow:seconds for 13500 training generator step: 0.074 
+INFO:tensorflow:loss: 0.306955
+INFO:tensorflow:finished 8 epoches
+INFO:tensorflow:seconds for 13600 training generator step: 0.006 
+INFO:tensorflow:loss: 0.021450
+INFO:tensorflow:seconds for 13700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.284520
+INFO:tensorflow:seconds for 13800 training generator step: 0.074 
+INFO:tensorflow:loss: 0.273516
+INFO:tensorflow:seconds for 13900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.281180
+INFO:tensorflow:seconds for 14000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.292823
+INFO:tensorflow:BLEU: 0.5953207679209714
+INFO:tensorflow:BLEU: 0.5815952057364504
+INFO:tensorflow:seconds for 14100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.294533
+INFO:tensorflow:seconds for 14200 training generator step: 0.075 
+INFO:tensorflow:loss: 0.293073
+INFO:tensorflow:seconds for 14300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.293598
+INFO:tensorflow:seconds for 14400 training generator step: 0.073 
+INFO:tensorflow:loss: 0.293086
+INFO:tensorflow:seconds for 14500 training generator step: 0.075 
+INFO:tensorflow:loss: 0.292133
+INFO:tensorflow:seconds for 14600 training generator step: 0.075 
+INFO:tensorflow:loss: 0.289684
+INFO:tensorflow:seconds for 14700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.302009
+INFO:tensorflow:seconds for 14800 training generator step: 0.074 
+INFO:tensorflow:loss: 0.303986
+INFO:tensorflow:seconds for 14900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.288311
+INFO:tensorflow:seconds for 15000 training generator step: 0.075 
+INFO:tensorflow:loss: 0.310554
+INFO:tensorflow:BLEU: 0.606231309174238
+INFO:tensorflow:BLEU: 0.5968313521045854
+INFO:tensorflow:seconds for 15100 training generator step: 0.152 
+INFO:tensorflow:loss: 0.303263
+INFO:tensorflow:seconds for 15200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.303769
+INFO:tensorflow:finished 9 epoches
+INFO:tensorflow:seconds for 15300 training generator step: 0.007 
+INFO:tensorflow:loss: 0.020407
+INFO:tensorflow:seconds for 15400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.271910
+INFO:tensorflow:seconds for 15500 training generator step: 0.073 
+INFO:tensorflow:loss: 0.268296
+INFO:tensorflow:seconds for 15600 training generator step: 0.075 
+INFO:tensorflow:loss: 0.278757
+INFO:tensorflow:seconds for 15700 training generator step: 0.075 
+INFO:tensorflow:loss: 0.289520
+INFO:tensorflow:seconds for 15800 training generator step: 0.074 
+INFO:tensorflow:loss: 0.262686
+INFO:tensorflow:seconds for 15900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.282591
+INFO:tensorflow:seconds for 16000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.289838
+INFO:tensorflow:BLEU: 0.6142474631475545
+INFO:tensorflow:BLEU: 0.5991528204783495
+INFO:tensorflow:seconds for 16100 training generator step: 0.152 
+INFO:tensorflow:loss: 0.293990
+INFO:tensorflow:seconds for 16200 training generator step: 0.075 
+INFO:tensorflow:loss: 0.280818
+INFO:tensorflow:seconds for 16300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.284983
+INFO:tensorflow:seconds for 16400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.282424
+INFO:tensorflow:seconds for 16500 training generator step: 0.074 
+INFO:tensorflow:loss: 0.286191
+INFO:tensorflow:seconds for 16600 training generator step: 0.074 
+INFO:tensorflow:loss: 0.289819
+INFO:tensorflow:seconds for 16700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.302200
+INFO:tensorflow:seconds for 16800 training generator step: 0.074 
+INFO:tensorflow:loss: 0.285598
+INFO:tensorflow:seconds for 16900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.294986
+INFO:tensorflow:finished 10 epoches
+INFO:tensorflow:seconds for 17000 training generator step: 0.007 
+INFO:tensorflow:loss: 0.026056
+INFO:tensorflow:BLEU: 0.5964296631767209
+INFO:tensorflow:BLEU: 0.5893279515144562
+INFO:tensorflow:seconds for 17100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.253001
+INFO:tensorflow:seconds for 17200 training generator step: 0.075 
+INFO:tensorflow:loss: 0.262268
+INFO:tensorflow:seconds for 17300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.262832
+INFO:tensorflow:seconds for 17400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.251259
+INFO:tensorflow:seconds for 17500 training generator step: 0.075 
+INFO:tensorflow:loss: 0.261777
+INFO:tensorflow:seconds for 17600 training generator step: 0.074 
+INFO:tensorflow:loss: 0.266733
+INFO:tensorflow:seconds for 17700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.280594
+INFO:tensorflow:seconds for 17800 training generator step: 0.074 
+INFO:tensorflow:loss: 0.264913
+INFO:tensorflow:seconds for 17900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.275788
+INFO:tensorflow:seconds for 18000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.279394
+INFO:tensorflow:BLEU: 0.5567852337253791
+INFO:tensorflow:BLEU: 0.5473710775152405
+INFO:tensorflow:seconds for 18100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.267951
+INFO:tensorflow:seconds for 18200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.265447
+INFO:tensorflow:seconds for 18300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.283812
+INFO:tensorflow:seconds for 18400 training generator step: 0.075 
+INFO:tensorflow:loss: 0.284722
+INFO:tensorflow:seconds for 18500 training generator step: 0.074 
+INFO:tensorflow:loss: 0.286644
+INFO:tensorflow:seconds for 18600 training generator step: 0.073 
+INFO:tensorflow:loss: 0.293115
+INFO:tensorflow:finished 11 epoches
+INFO:tensorflow:seconds for 18700 training generator step: 0.008 
+INFO:tensorflow:loss: 0.026952
+INFO:tensorflow:seconds for 18800 training generator step: 0.074 
+INFO:tensorflow:loss: 0.237199
+INFO:tensorflow:seconds for 18900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.267359
+INFO:tensorflow:seconds for 19000 training generator step: 0.075 
+INFO:tensorflow:loss: 0.255202
+INFO:tensorflow:BLEU: 0.6114062603154518
+INFO:tensorflow:BLEU: 0.5978264213500241
+INFO:tensorflow:seconds for 19100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.249106
+INFO:tensorflow:seconds for 19200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.258491
+INFO:tensorflow:seconds for 19300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.259822
+INFO:tensorflow:seconds for 19400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.265681
+INFO:tensorflow:seconds for 19500 training generator step: 0.074 
+INFO:tensorflow:loss: 0.262544
+INFO:tensorflow:seconds for 19600 training generator step: 0.074 
+INFO:tensorflow:loss: 0.261480
+INFO:tensorflow:seconds for 19700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.270129
+INFO:tensorflow:seconds for 19800 training generator step: 0.074 
+INFO:tensorflow:loss: 0.270178
+INFO:tensorflow:seconds for 19900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.267592
+INFO:tensorflow:seconds for 20000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.263741
+INFO:tensorflow:BLEU: 0.5472285002772351
+INFO:tensorflow:BLEU: 0.5441013359563479
+INFO:tensorflow:seconds for 20100 training generator step: 0.154 
+INFO:tensorflow:loss: 0.266166
+INFO:tensorflow:seconds for 20200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.267426
+INFO:tensorflow:seconds for 20300 training generator step: 0.075 
+INFO:tensorflow:loss: 0.268087
+INFO:tensorflow:finished 12 epoches
+INFO:tensorflow:seconds for 20400 training generator step: 0.009 
+INFO:tensorflow:loss: 0.030285
+INFO:tensorflow:seconds for 20500 training generator step: 0.074 
+INFO:tensorflow:loss: 0.228207
+INFO:tensorflow:seconds for 20600 training generator step: 0.075 
+INFO:tensorflow:loss: 0.245255
+INFO:tensorflow:seconds for 20700 training generator step: 0.075 
+INFO:tensorflow:loss: 0.243898
+INFO:tensorflow:seconds for 20800 training generator step: 0.073 
+INFO:tensorflow:loss: 0.261387
+INFO:tensorflow:seconds for 20900 training generator step: 0.075 
+INFO:tensorflow:loss: 0.255816
+INFO:tensorflow:seconds for 21000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.252830
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow/python/training/saver.py:966: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+INFO:tensorflow:BLEU: 0.5930776973312275
+INFO:tensorflow:BLEU: 0.5886469928526027
+INFO:tensorflow:seconds for 21100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.255530
+INFO:tensorflow:seconds for 21200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.240919
+INFO:tensorflow:seconds for 21300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.262563
+INFO:tensorflow:seconds for 21400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.244886
+INFO:tensorflow:seconds for 21500 training generator step: 0.074 
+INFO:tensorflow:loss: 0.254001
+INFO:tensorflow:seconds for 21600 training generator step: 0.074 
+INFO:tensorflow:loss: 0.248940
+INFO:tensorflow:seconds for 21700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.262259
+INFO:tensorflow:seconds for 21800 training generator step: 0.074 
+INFO:tensorflow:loss: 0.260644
+INFO:tensorflow:seconds for 21900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.255960
+INFO:tensorflow:seconds for 22000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.264900
+INFO:tensorflow:BLEU: 0.5708823097143227
+INFO:tensorflow:BLEU: 0.5693099336799099
+INFO:tensorflow:finished 13 epoches
+INFO:tensorflow:seconds for 22100 training generator step: 0.010 
+INFO:tensorflow:loss: 0.028829
+INFO:tensorflow:seconds for 22200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.227724
+INFO:tensorflow:seconds for 22300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.232677
+INFO:tensorflow:seconds for 22400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.239428
+INFO:tensorflow:seconds for 22500 training generator step: 0.074 
+INFO:tensorflow:loss: 0.233133
+INFO:tensorflow:seconds for 22600 training generator step: 0.074 
+INFO:tensorflow:loss: 0.246928
+INFO:tensorflow:seconds for 22700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.249434
+INFO:tensorflow:seconds for 22800 training generator step: 0.074 
+INFO:tensorflow:loss: 0.242898
+INFO:tensorflow:seconds for 22900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.250160
+INFO:tensorflow:seconds for 23000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.253419
+INFO:tensorflow:BLEU: 0.5723211260217681
+INFO:tensorflow:BLEU: 0.5622742081460269
+INFO:tensorflow:seconds for 23100 training generator step: 0.152 
+INFO:tensorflow:loss: 0.239292
+INFO:tensorflow:seconds for 23200 training generator step: 0.075 
+INFO:tensorflow:loss: 0.236704
+INFO:tensorflow:seconds for 23300 training generator step: 0.075 
+INFO:tensorflow:loss: 0.238441
+INFO:tensorflow:seconds for 23400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.242618
+INFO:tensorflow:seconds for 23500 training generator step: 0.074 
+INFO:tensorflow:loss: 0.250517
+INFO:tensorflow:seconds for 23600 training generator step: 0.074 
+INFO:tensorflow:loss: 0.254762
+INFO:tensorflow:seconds for 23700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.260593
+INFO:tensorflow:finished 14 epoches
+INFO:tensorflow:seconds for 23800 training generator step: 0.010 
+INFO:tensorflow:loss: 0.027776
+INFO:tensorflow:seconds for 23900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.208978
+INFO:tensorflow:seconds for 24000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.224905
+INFO:tensorflow:BLEU: 0.6075351569335298
+INFO:tensorflow:BLEU: 0.5862856762518607
+INFO:tensorflow:seconds for 24100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.230971
+INFO:tensorflow:seconds for 24200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.234010
+INFO:tensorflow:seconds for 24300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.237705
+INFO:tensorflow:seconds for 24400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.227444
+INFO:tensorflow:seconds for 24500 training generator step: 0.074 
+INFO:tensorflow:loss: 0.241724
+INFO:tensorflow:seconds for 24600 training generator step: 0.075 
+INFO:tensorflow:loss: 0.241338
+INFO:tensorflow:seconds for 24700 training generator step: 0.075 
+INFO:tensorflow:loss: 0.229118
+INFO:tensorflow:seconds for 24800 training generator step: 0.075 
+INFO:tensorflow:loss: 0.233973
+INFO:tensorflow:seconds for 24900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.229952
+INFO:tensorflow:seconds for 25000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.239906
+INFO:tensorflow:BLEU: 0.5487127451827477
+INFO:tensorflow:BLEU: 0.5374593031836037
+INFO:tensorflow:seconds for 25100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.237645
+INFO:tensorflow:seconds for 25200 training generator step: 0.073 
+INFO:tensorflow:loss: 0.223974
+INFO:tensorflow:seconds for 25300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.232042
+INFO:tensorflow:seconds for 25400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.245124
+INFO:tensorflow:finished 15 epoches
+INFO:tensorflow:seconds for 25500 training generator step: 0.011 
+INFO:tensorflow:loss: 0.032499
+INFO:tensorflow:seconds for 25600 training generator step: 0.074 
+INFO:tensorflow:loss: 0.207102
+INFO:tensorflow:seconds for 25700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.217180
+INFO:tensorflow:seconds for 25800 training generator step: 0.075 
+INFO:tensorflow:loss: 0.209993
+INFO:tensorflow:seconds for 25900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.226690
+INFO:tensorflow:seconds for 26000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.215802
+INFO:tensorflow:BLEU: 0.599439725588196
+INFO:tensorflow:BLEU: 0.5882467246092861
+INFO:tensorflow:seconds for 26100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.217823
+INFO:tensorflow:seconds for 26200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.214786
+INFO:tensorflow:seconds for 26300 training generator step: 0.073 
+INFO:tensorflow:loss: 0.225562
+INFO:tensorflow:seconds for 26400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.223914
+INFO:tensorflow:seconds for 26500 training generator step: 0.075 
+INFO:tensorflow:loss: 0.236116
+INFO:tensorflow:seconds for 26600 training generator step: 0.073 
+INFO:tensorflow:loss: 0.223337
+INFO:tensorflow:seconds for 26700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.221846
+INFO:tensorflow:seconds for 26800 training generator step: 0.075 
+INFO:tensorflow:loss: 0.219532
+INFO:tensorflow:seconds for 26900 training generator step: 0.075 
+INFO:tensorflow:loss: 0.227235
+INFO:tensorflow:seconds for 27000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.240720
+INFO:tensorflow:BLEU: 0.601016573497899
+INFO:tensorflow:BLEU: 0.6070865488117759
+INFO:tensorflow:seconds for 27100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.234598
+INFO:tensorflow:finished 16 epoches
+INFO:tensorflow:seconds for 27200 training generator step: 0.012 
+INFO:tensorflow:loss: 0.028152
+INFO:tensorflow:seconds for 27300 training generator step: 0.075 
+INFO:tensorflow:loss: 0.212840
+INFO:tensorflow:seconds for 27400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.212447
+INFO:tensorflow:seconds for 27500 training generator step: 0.074 
+INFO:tensorflow:loss: 0.219040
+INFO:tensorflow:seconds for 27600 training generator step: 0.073 
+INFO:tensorflow:loss: 0.210854
+INFO:tensorflow:seconds for 27700 training generator step: 0.075 
+INFO:tensorflow:loss: 0.213836
+INFO:tensorflow:seconds for 27800 training generator step: 0.074 
+INFO:tensorflow:loss: 0.200519
+INFO:tensorflow:seconds for 27900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.219642
+INFO:tensorflow:seconds for 28000 training generator step: 0.075 
+INFO:tensorflow:loss: 0.213517
+INFO:tensorflow:BLEU: 0.5850666664644439
+INFO:tensorflow:BLEU: 0.5785329453081558
+INFO:tensorflow:seconds for 28100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.209319
+INFO:tensorflow:seconds for 28200 training generator step: 0.075 
+INFO:tensorflow:loss: 0.215721
+INFO:tensorflow:seconds for 28300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.216830
+INFO:tensorflow:seconds for 28400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.207434
+INFO:tensorflow:seconds for 28500 training generator step: 0.074 
+INFO:tensorflow:loss: 0.219302
+INFO:tensorflow:seconds for 28600 training generator step: 0.074 
+INFO:tensorflow:loss: 0.222284
+INFO:tensorflow:seconds for 28700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.220375
+INFO:tensorflow:seconds for 28800 training generator step: 0.075 
+INFO:tensorflow:loss: 0.225624
+INFO:tensorflow:finished 17 epoches
+INFO:tensorflow:seconds for 28900 training generator step: 0.013 
+INFO:tensorflow:loss: 0.031809
+INFO:tensorflow:seconds for 29000 training generator step: 0.073 
+INFO:tensorflow:loss: 0.194155
+INFO:tensorflow:BLEU: 0.5853090325935003
+INFO:tensorflow:BLEU: 0.5756490749416541
+INFO:tensorflow:seconds for 29100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.183341
+INFO:tensorflow:seconds for 29200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.185603
+INFO:tensorflow:seconds for 29300 training generator step: 0.075 
+INFO:tensorflow:loss: 0.191607
+INFO:tensorflow:seconds for 29400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.203955
+INFO:tensorflow:seconds for 29500 training generator step: 0.073 
+INFO:tensorflow:loss: 0.204727
+INFO:tensorflow:seconds for 29600 training generator step: 0.074 
+INFO:tensorflow:loss: 0.204215
+INFO:tensorflow:seconds for 29700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.213180
+INFO:tensorflow:seconds for 29800 training generator step: 0.074 
+INFO:tensorflow:loss: 0.212074
+INFO:tensorflow:seconds for 29900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.203765
+INFO:tensorflow:seconds for 30000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.202226
+INFO:tensorflow:BLEU: 0.5988407223532546
+INFO:tensorflow:BLEU: 0.5874928343575214
+INFO:tensorflow:seconds for 30100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.204185
+INFO:tensorflow:seconds for 30200 training generator step: 0.075 
+INFO:tensorflow:loss: 0.204065
+INFO:tensorflow:seconds for 30300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.213363
+INFO:tensorflow:seconds for 30400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.216641
+INFO:tensorflow:seconds for 30500 training generator step: 0.074 
+INFO:tensorflow:loss: 0.220842
+INFO:tensorflow:finished 18 epoches
+INFO:tensorflow:seconds for 30600 training generator step: 0.013 
+INFO:tensorflow:loss: 0.028342
+INFO:tensorflow:seconds for 30700 training generator step: 0.073 
+INFO:tensorflow:loss: 0.186344
+INFO:tensorflow:seconds for 30800 training generator step: 0.075 
+INFO:tensorflow:loss: 0.198555
+INFO:tensorflow:seconds for 30900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.187096
+INFO:tensorflow:seconds for 31000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.192456
+INFO:tensorflow:BLEU: 0.5728820201420715
+INFO:tensorflow:BLEU: 0.5570349882253783
+INFO:tensorflow:seconds for 31100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.181740
+INFO:tensorflow:seconds for 31200 training generator step: 0.075 
+INFO:tensorflow:loss: 0.192046
+INFO:tensorflow:seconds for 31300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.190149
+INFO:tensorflow:seconds for 31400 training generator step: 0.075 
+INFO:tensorflow:loss: 0.186761
+INFO:tensorflow:seconds for 31500 training generator step: 0.074 
+INFO:tensorflow:loss: 0.197374
+INFO:tensorflow:seconds for 31600 training generator step: 0.074 
+INFO:tensorflow:loss: 0.195333
+INFO:tensorflow:seconds for 31700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.195363
+INFO:tensorflow:seconds for 31800 training generator step: 0.075 
+INFO:tensorflow:loss: 0.184873
+INFO:tensorflow:seconds for 31900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.200675
+INFO:tensorflow:seconds for 32000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.211491
+INFO:tensorflow:BLEU: 0.5838886667820956
+INFO:tensorflow:BLEU: 0.57237876072476
+INFO:tensorflow:seconds for 32100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.214189
+INFO:tensorflow:seconds for 32200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.209558
+INFO:tensorflow:finished 19 epoches
+INFO:tensorflow:seconds for 32300 training generator step: 0.014 
+INFO:tensorflow:loss: 0.035763
+INFO:tensorflow:seconds for 32400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.182188
+INFO:tensorflow:seconds for 32500 training generator step: 0.074 
+INFO:tensorflow:loss: 0.175864
+INFO:tensorflow:seconds for 32600 training generator step: 0.075 
+INFO:tensorflow:loss: 0.171632
+INFO:tensorflow:seconds for 32700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.176787
+INFO:tensorflow:seconds for 32800 training generator step: 0.075 
+INFO:tensorflow:loss: 0.194695
+INFO:tensorflow:seconds for 32900 training generator step: 0.073 
+INFO:tensorflow:loss: 0.173657
+INFO:tensorflow:seconds for 33000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.186006
+INFO:tensorflow:BLEU: 0.6003984852062763
+INFO:tensorflow:BLEU: 0.5892494385042907
+INFO:tensorflow:seconds for 33100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.192756
+INFO:tensorflow:seconds for 33200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.183411
+INFO:tensorflow:seconds for 33300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.190409
+INFO:tensorflow:seconds for 33400 training generator step: 0.073 
+INFO:tensorflow:loss: 0.191429
+INFO:tensorflow:seconds for 33500 training generator step: 0.075 
+INFO:tensorflow:loss: 0.188261
+INFO:tensorflow:seconds for 33600 training generator step: 0.075 
+INFO:tensorflow:loss: 0.198220
+INFO:tensorflow:seconds for 33700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.183975
+INFO:tensorflow:seconds for 33800 training generator step: 0.075 
+INFO:tensorflow:loss: 0.199079
+INFO:tensorflow:seconds for 33900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.193464
+INFO:tensorflow:finished 20 epoches
+INFO:tensorflow:seconds for 34000 training generator step: 0.014 
+INFO:tensorflow:loss: 0.030817
+INFO:tensorflow:BLEU: 0.5906522349523751
+INFO:tensorflow:BLEU: 0.5839315642241757
+INFO:tensorflow:seconds for 34100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.168370
+INFO:tensorflow:seconds for 34200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.165055
+INFO:tensorflow:seconds for 34300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.175142
+INFO:tensorflow:seconds for 34400 training generator step: 0.073 
+INFO:tensorflow:loss: 0.174045
+INFO:tensorflow:seconds for 34500 training generator step: 0.075 
+INFO:tensorflow:loss: 0.176379
+INFO:tensorflow:seconds for 34600 training generator step: 0.074 
+INFO:tensorflow:loss: 0.168165
+INFO:tensorflow:seconds for 34700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.167577
+INFO:tensorflow:seconds for 34800 training generator step: 0.075 
+INFO:tensorflow:loss: 0.169403
+INFO:tensorflow:seconds for 34900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.184892
+INFO:tensorflow:seconds for 35000 training generator step: 0.074 
+INFO:tensorflow:loss: 0.176506
+INFO:tensorflow:BLEU: 0.5693566434697063
+INFO:tensorflow:BLEU: 0.571353749005417
+INFO:tensorflow:seconds for 35100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.182396
+INFO:tensorflow:seconds for 35200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.195300
+INFO:tensorflow:seconds for 35300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.187008
+INFO:tensorflow:seconds for 35400 training generator step: 0.074 
+INFO:tensorflow:loss: 0.186423
+INFO:tensorflow:seconds for 35500 training generator step: 0.074 
+INFO:tensorflow:loss: 0.174945
+INFO:tensorflow:seconds for 35600 training generator step: 0.074 
+INFO:tensorflow:loss: 0.182388
+INFO:tensorflow:finished 21 epoches
+INFO:tensorflow:seconds for 35700 training generator step: 0.016 
+INFO:tensorflow:loss: 0.031942
+INFO:tensorflow:seconds for 35800 training generator step: 0.074 
+INFO:tensorflow:loss: 0.159921
+INFO:tensorflow:seconds for 35900 training generator step: 0.074 
+INFO:tensorflow:loss: 0.162400
+INFO:tensorflow:seconds for 36000 training generator step: 0.075 
+INFO:tensorflow:loss: 0.149246
+INFO:tensorflow:BLEU: 0.6010256897763431
+INFO:tensorflow:BLEU: 0.5900342585714465
+INFO:tensorflow:seconds for 36100 training generator step: 0.153 
+INFO:tensorflow:loss: 0.159747
+INFO:tensorflow:seconds for 36200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.166009
+INFO:tensorflow:seconds for 36300 training generator step: 0.074 
+INFO:tensorflow:loss: 0.160836
+INFO:tensorflow:seconds for 36400 training generator step: 0.073 
+INFO:tensorflow:loss: 0.165865
+INFO:tensorflow:seconds for 36500 training generator step: 0.074 
+INFO:tensorflow:loss: 0.164360
+INFO:tensorflow:seconds for 36600 training generator step: 0.074 
+INFO:tensorflow:loss: 0.183143
+INFO:tensorflow:seconds for 36700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.173552
+INFO:tensorflow:seconds for 36800 training generator step: 0.080 
+INFO:tensorflow:loss: 0.165172
+INFO:tensorflow:seconds for 36900 training generator step: 0.080 
+INFO:tensorflow:loss: 0.176288
+INFO:tensorflow:seconds for 37000 training generator step: 0.081 
+INFO:tensorflow:loss: 0.173276
+INFO:tensorflow:BLEU: 0.5763484334969943
+INFO:tensorflow:BLEU: 0.572777765890416
+INFO:tensorflow:seconds for 37100 training generator step: 0.158 
+INFO:tensorflow:loss: 0.186613
+INFO:tensorflow:seconds for 37200 training generator step: 0.075 
+INFO:tensorflow:loss: 0.173437
+INFO:tensorflow:seconds for 37300 training generator step: 0.076 
+INFO:tensorflow:loss: 0.176413
+INFO:tensorflow:finished 22 epoches
+INFO:tensorflow:seconds for 37400 training generator step: 0.017 
+INFO:tensorflow:loss: 0.032582
+INFO:tensorflow:seconds for 37500 training generator step: 0.077 
+INFO:tensorflow:loss: 0.139275
+INFO:tensorflow:seconds for 37600 training generator step: 0.076 
+INFO:tensorflow:loss: 0.152466
+INFO:tensorflow:seconds for 37700 training generator step: 0.088 
+INFO:tensorflow:loss: 0.152527
+INFO:tensorflow:seconds for 37800 training generator step: 0.078 
+INFO:tensorflow:loss: 0.164820
+INFO:tensorflow:seconds for 37900 training generator step: 0.077 
+INFO:tensorflow:loss: 0.148560
+INFO:tensorflow:seconds for 38000 training generator step: 0.075 
+INFO:tensorflow:loss: 0.168743
+INFO:tensorflow:BLEU: 0.5684982613176248
+INFO:tensorflow:BLEU: 0.56387582352389
+INFO:tensorflow:seconds for 38100 training generator step: 0.154 
+INFO:tensorflow:loss: 0.164326
+INFO:tensorflow:seconds for 38200 training generator step: 0.074 
+INFO:tensorflow:loss: 0.156607
+INFO:tensorflow:seconds for 38300 training generator step: 0.075 
+INFO:tensorflow:loss: 0.150355
+INFO:tensorflow:seconds for 38400 training generator step: 0.078 
+INFO:tensorflow:loss: 0.165921
+INFO:tensorflow:seconds for 38500 training generator step: 0.077 
+INFO:tensorflow:loss: 0.159661
+INFO:tensorflow:seconds for 38600 training generator step: 0.076 
+INFO:tensorflow:loss: 0.160629
+INFO:tensorflow:seconds for 38700 training generator step: 0.074 
+INFO:tensorflow:loss: 0.168713
+INFO:tensorflow:seconds for 38800 training generator step: 0.074 
+INFO:tensorflow:loss: 0.162299
+INFO:tensorflow:seconds for 38900 training generator step: 0.092 
+INFO:tensorflow:loss: 0.162021
+INFO:tensorflow:seconds for 39000 training generator step: 0.082 
+INFO:tensorflow:loss: 0.167922
+INFO:tensorflow:BLEU: 0.5970877449048198
+INFO:tensorflow:BLEU: 0.584768393379162
+INFO:tensorflow:finished 23 epoches
+INFO:tensorflow:seconds for 39100 training generator step: 0.018 
+INFO:tensorflow:loss: 0.036359
+INFO:tensorflow:seconds for 39200 training generator step: 0.075 
+INFO:tensorflow:loss: 0.136087
+INFO:tensorflow:seconds for 39300 training generator step: 0.076 
+INFO:tensorflow:loss: 0.143237
+INFO:tensorflow:seconds for 39400 training generator step: 0.076 
+INFO:tensorflow:loss: 0.143543
+run_train.sh: line 1: 13777 Terminated              CUDA_VISIBLE_DEVICES=3 nohup python3 run_summarization.py --mode=train --vocab_path=data/vocab.txt --log_root=log_autoencoder --exp_name=myexperiment --gpuid=0
